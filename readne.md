@@ -15,3 +15,11 @@ If the folder's name is `Clips` it will create a new folder next to it called `C
 There is no check for if the folder is empty so if a folder just has screenshots then it will still be made in the new AV1 folder but nothing will be put inside!
 
 *Of course you need [QSVEncC](https://github.com/rigaya/QSVEnc/releases) in your path for this to work!*
+
+### - current folder to QSV AV1
+
+This is based of the above scipt and just recreated the current folders content.
+
+Same [QSVEncC64](https://github.com/rigaya/QSVEnc/releases) requirement.
+
+If the current folder is `CringeCompClips` it will create a folder called `CringeCompClips AV1` next to it and re-encode the videos inside
