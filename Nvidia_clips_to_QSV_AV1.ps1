@@ -1,6 +1,6 @@
 # Get current folder name
 $current_location = Get-Location
-$current_folder_name = Split-Path -Path $path -Leaf
+$current_folder_name = Split-Path -Path $current_location -Leaf
 
 # Create AV1 folder
 $folder = "..\" + $current_folder_name + " AV1\"
@@ -24,7 +24,7 @@ Foreach-Object {
 
     $global:video_folder_global = $_.Name
 
-    Get-ChildItem $video_folder -Filter ("*.mp4", "*.mov", "*.mkv", "*.avi", "*.m4v", "*.webm") | 
+    Get-ChildItem $video_folder -include *.mp4,*.mov,*.mkv,*.avi,*.m4v,*.webm -recurse | 
         Foreach-Object {
 
             $in = $_.FullName
