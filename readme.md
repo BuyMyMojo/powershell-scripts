@@ -1,8 +1,6 @@
 # Powershell scripts
 
-## Scripts
-
-### - Nvidia clips to QSV AV1
+## - Nvidia clips to QSV AV1
 
 > this also just recreates the current folder's sub-dir structure and re-encodes and videos under those folders to AV1. not exclusivce to Nvidia clips at all!
 
@@ -16,7 +14,7 @@ There is no check for if the folder is empty so if a folder just has screenshots
 
 *Of course you need [QSVEncC](https://github.com/rigaya/QSVEnc/releases) in your path for this to work!*
 
-### - current folder to QSV AV1
+## - current folder to QSV AV1
 
 This is based of the above scipt and just recreated the current folders content.
 
