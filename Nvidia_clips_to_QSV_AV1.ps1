@@ -7,7 +7,7 @@ $folder = "..\" + $current_folder_name + " AV1\"
 mkdir $folder
 
 # Create the sub-folders in the new folder
-Get-ChildItem ".\" -Filter * -exclude av1.ps1 | 
+Get-ChildItem ".\" -Filter * -exclude Nvidia_clips_to_QSV_AV1.ps1 | 
 Foreach-Object {
     echo $_.Name
 
@@ -17,7 +17,7 @@ Foreach-Object {
 }
 
 # Go through all the sub-folders and encode any video ending in mp4, mov, mkv, avi, m4v or webm
-Get-ChildItem ".\" -Filter * -exclude av1.ps1 | 
+Get-ChildItem ".\" -Filter * -exclude Nvidia_clips_to_QSV_AV1.ps1 | 
 Foreach-Object {
     
     $video_folder = ".\" + $_.Name
