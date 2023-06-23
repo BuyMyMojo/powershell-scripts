@@ -10,7 +10,7 @@ mkdir $folder
 Get-ChildItem $current_location -Include *.mp4,*.mov,*.mkv,*.avi,*.m4v,*.webm -recurse | 
     Foreach-Object {
         $in = $_.FullName
-        $output = "..\" + $current_folder_name + " AV1\" + $_.Name
+        $output = "..\" + $current_folder_name + " AV1\" + $_.Name + ".mp4"
         
         echo $in
 

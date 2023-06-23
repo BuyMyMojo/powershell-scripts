@@ -28,7 +28,7 @@ Foreach-Object {
         Foreach-Object {
 
             $in = $_.FullName
-            $output = "..\" + $current_folder_name + " AV1\" + $global:video_folder_global + "\" + $_.Name
+            $output = "..\" + $current_folder_name + " AV1\" + $global:video_folder_global + "\" + $_.Name + ".mp4"
 
             
             QSVEncC64 -i $in -c av1 --output-depth 10 --icq 24 -b 3 -u best --gop-len 180 --gpu-copy --i-adapt --b-adapt --la-depth 100 --b-pyramid --audio-codec opus --colormatrix auto --colorprim auto --transfer auto --metadata copy -o $output
